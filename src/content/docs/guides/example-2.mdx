@@ -1,0 +1,109 @@
+---
+title: Bienvenido a mis docs
+---
+
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
+
+import FileTree from '../../../components/file-tree.astro';
+
+<FileTree>
+
+- public/
+  - favicon.svg
+- src/
+  - assets/
+    - logo.svg
+    - screenshot.jpg
+  - components/
+    - Componetes
+    - InteractiveWidget.jsx
+  - content/
+    - docs/
+      - guides/
+        - 01-getting-started.md
+        - 02-advanced.md
+      - index.mdx
+    - config.ts
+  - env.d.ts
+- astro.config.mjs
+- package.json
+- tsconfig.json
+
+</FileTree>
+
+   <FileTree>
+
+   - src/
+     - assets/
+       - **mi-logo.svg**
+     - content/
+   - astro.config.mjs
+   - **mi-logo.svg/**
+
+</FileTree>
+
+
+
+<Tabs>
+  <TabItem label="Estrellas">Sirius, Vega, Betelgeuse</TabItem>
+  <TabItem label="Lunas">Io, Europa, Ganymede</TabItem>
+</Tabs>
+
+
+
+<Card title="¡Echa un vistazo a esto!">
+  Contenido interesante que quieres resaltar.
+</Card>
+
+<CardGrid>
+  <Card title="Estrellas" icon="star">
+    Sirius, Vega, Betelgeuse
+  </Card>
+  <Card title="Lunas" icon="moon">
+    Io, Europa, Ganymede
+  </Card>
+</CardGrid>
+
+<CardGrid>
+  <Card title="Estrellas" icon="star">
+    Sirius, Vega, Betelgeuse
+  </Card>
+  <Card title="Lunas" icon="moon">
+    Io, Europa, Ganymede
+  </Card>
+</CardGrid>
+
+
+<LinkCard
+  title="Personalizando Starlight"
+  description="Aprende a hacer que tu sitio Starlight sea único con estilos personalizados, fuentes y más."
+  href="/es/guides/customization/"
+/>
+
+<CardGrid>
+  <LinkCard
+    title="Creación de contenido en Markdown"
+    href="/es/guides/authoring-content/"
+  />
+  <LinkCard title="Componentes" href="/es/guides/components/" />
+</CardGrid>
+
+
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   ├── docs/
+│   │   └── config.ts
+│   └── env.d.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
+
